@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Audit Report</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 { color: #1976D2; }
+    .summary {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      background: white;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    th {
+      background: #1976D2;
+      color: white;
+      padding: 12px;
+      text-align: left;
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+    }
+    tr:hover { background: #f5f5f5; }
+    .color-swatch {
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      display: inline-block;
+    }
+    .usage-badge {
+      background: #4CAF50;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 Color Audit Report</h1>
+  
+  <div class="summary">
+    <h2>Summary</h2>
+    <p><strong>Total Files:</strong> 6</p>
+    <p><strong>Unique Colors:</strong> 125</p>
+    <p><strong>Total Usages:</strong> 56</p>
+    <p><strong>Generated:</strong> 2026-01-29 12:56:18.837096</p>
+  </div>
+  
+  <h2>Color Definitions</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Color</th>
+        <th>Name</th>
+        <th>Value</th>
+        <th>Usage</th>
+        <th>Files</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFFFFF"></div></td>
+        <td><strong>AppColors.textOnPrimary</strong></td>
+        <td><code>#FFFFFF</code></td>
+        <td><span class="usage-badge">3</span></td>
+        <td>3</td>
+        <td><small>app_colors.dart:140</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #757575"></div></td>
+        <td><strong>AppColors.textSecondary</strong></td>
+        <td><code>#757575</code></td>
+        <td><span class="usage-badge">3</span></td>
+        <td>2</td>
+        <td><small>app_colors.dart:138</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #212121"></div></td>
+        <td><strong>AppColors.textPrimary</strong></td>
+        <td><code>#212121</code></td>
+        <td><span class="usage-badge">3</span></td>
+        <td>3</td>
+        <td><small>app_colors.dart:137</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #2196F3"></div></td>
+        <td><strong>AppColors.blue500</strong></td>
+        <td><code>#2196F3</code></td>
+        <td><span class="usage-badge">2</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:36</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #4CAF50"></div></td>
+        <td><strong>AppColors.green500</strong></td>
+        <td><code>#4CAF50</code></td>
+        <td><span class="usage-badge">2</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:50</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E8F5E9"></div></td>
+        <td><strong>AppColors.green50</strong></td>
+        <td><code>#E8F5E9</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:45</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #BBDEFB"></div></td>
+        <td><strong>AppColors.blue100</strong></td>
+        <td><code>#BBDEFB</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:32</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #90CAF9"></div></td>
+        <td><strong>AppColors.blue200</strong></td>
+        <td><code>#90CAF9</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:33</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #D32F2F"></div></td>
+        <td><strong>AppColors.errorRed</strong></td>
+        <td><code>#D32F2F</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:23</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #42A5F5"></div></td>
+        <td><strong>AppColors.blue400</strong></td>
+        <td><code>#42A5F5</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:35</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FBC02D"></div></td>
+        <td><strong>AppColors.warningYellow</strong></td>
+        <td><code>#FBC02D</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:24</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1E88E5"></div></td>
+        <td><strong>AppColors.blue600</strong></td>
+        <td><code>#1E88E5</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:37</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1976D2"></div></td>
+        <td><strong>AppColors.blue700</strong></td>
+        <td><code>#1976D2</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:38</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1565C0"></div></td>
+        <td><strong>AppColors.blue800</strong></td>
+        <td><code>#1565C0</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:39</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #0D47A1"></div></td>
+        <td><strong>AppColors.blue900</strong></td>
+        <td><code>#0D47A1</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:40</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E0E0E0"></div></td>
+        <td><strong>AppColors.divider</strong></td>
+        <td><code>#E0E0E0</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:159</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #C8E6C9"></div></td>
+        <td><strong>AppColors.green100</strong></td>
+        <td><code>#C8E6C9</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:46</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #A5D6A7"></div></td>
+        <td><strong>AppColors.green200</strong></td>
+        <td><code>#A5D6A7</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:47</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #81C784"></div></td>
+        <td><strong>AppColors.green300</strong></td>
+        <td><code>#81C784</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:48</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #66BB6A"></div></td>
+        <td><strong>AppColors.green400</strong></td>
+        <td><code>#66BB6A</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:49</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #2E7D32"></div></td>
+        <td><strong>AppColors.successGreen</strong></td>
+        <td><code>#2E7D32</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:25</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #43A047"></div></td>
+        <td><strong>AppColors.green600</strong></td>
+        <td><code>#43A047</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:51</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #388E3C"></div></td>
+        <td><strong>AppColors.green700</strong></td>
+        <td><code>#388E3C</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:52</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #2E7D32"></div></td>
+        <td><strong>AppColors.green800</strong></td>
+        <td><code>#2E7D32</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:53</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1B5E20"></div></td>
+        <td><strong>AppColors.green900</strong></td>
+        <td><code>#1B5E20</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:54</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1976D2"></div></td>
+        <td><strong>AppColors.primaryBlue</strong></td>
+        <td><code>#1976D2</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:9</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FF9800"></div></td>
+        <td><strong>AppColors.orange500</strong></td>
+        <td><code>#FF9800</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:78</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FAFAFA"></div></td>
+        <td><strong>AppColors.grey50</strong></td>
+        <td><code>#FAFAFA</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:115</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #F5F5F5"></div></td>
+        <td><strong>AppColors.grey100</strong></td>
+        <td><code>#F5F5F5</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:116</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #EEEEEE"></div></td>
+        <td><strong>AppColors.grey200</strong></td>
+        <td><code>#EEEEEE</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:117</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E0E0E0"></div></td>
+        <td><strong>AppColors.grey300</strong></td>
+        <td><code>#E0E0E0</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:118</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #000000"></div></td>
+        <td><strong>AppColors.cardShadow</strong></td>
+        <td><code>#000000</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:152</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #9E9E9E"></div></td>
+        <td><strong>AppColors.grey500</strong></td>
+        <td><code>#9E9E9E</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:120</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #757575"></div></td>
+        <td><strong>AppColors.grey600</strong></td>
+        <td><code>#757575</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:121</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #616161"></div></td>
+        <td><strong>AppColors.grey700</strong></td>
+        <td><code>#616161</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:122</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #424242"></div></td>
+        <td><strong>AppColors.grey800</strong></td>
+        <td><code>#424242</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:123</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #212121"></div></td>
+        <td><strong>AppColors.grey900</strong></td>
+        <td><code>#212121</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:124</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FAFAFA"></div></td>
+        <td><strong>AppColors.backgroundLight</strong></td>
+        <td><code>#FAFAFA</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:129</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #0288D1"></div></td>
+        <td><strong>AppColors.infoBlue</strong></td>
+        <td><code>#0288D1</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:26</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #BDBDBD"></div></td>
+        <td><strong>AppColors.grey400</strong></td>
+        <td><code>#BDBDBD</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:119</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #BDBDBD"></div></td>
+        <td><strong>AppColors.textDisabled</strong></td>
+        <td><code>#BDBDBD</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:139</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E3F2FD"></div></td>
+        <td><strong>AppColors.blue50</strong></td>
+        <td><code>#E3F2FD</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:31</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1976D2"></div></td>
+        <td><strong>AppColors.buttonPrimary</strong></td>
+        <td><code>#1976D2</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:146</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #388E3C"></div></td>
+        <td><strong>AppColors.buttonSecondary</strong></td>
+        <td><code>#388E3C</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:147</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #BDBDBD"></div></td>
+        <td><strong>AppColors.buttonDisabled</strong></td>
+        <td><code>#BDBDBD</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:148</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFFFFF"></div></td>
+        <td><strong>AppColors.cardBackground</strong></td>
+        <td><code>#FFFFFF</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:150</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E0E0E0"></div></td>
+        <td><strong>AppColors.cardBorder</strong></td>
+        <td><code>#E0E0E0</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:151</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #64B5F6"></div></td>
+        <td><strong>AppColors.blue300</strong></td>
+        <td><code>#64B5F6</code></td>
+        <td><span class="usage-badge">1</span></td>
+        <td>1</td>
+        <td><small>app_colors.dart:34</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFCC80"></div></td>
+        <td><strong>AppColors.orange200</strong></td>
+        <td><code>#FFCC80</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:75</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E65100"></div></td>
+        <td><strong>AppColors.orange900</strong></td>
+        <td><code>#E65100</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:82</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #F3E5F5"></div></td>
+        <td><strong>AppColors.purple50</strong></td>
+        <td><code>#F3E5F5</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:87</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E1BEE7"></div></td>
+        <td><strong>AppColors.purple100</strong></td>
+        <td><code>#E1BEE7</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:88</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #CE93D8"></div></td>
+        <td><strong>AppColors.purple200</strong></td>
+        <td><code>#CE93D8</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:89</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #BA68C8"></div></td>
+        <td><strong>AppColors.purple300</strong></td>
+        <td><code>#BA68C8</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:90</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #AB47BC"></div></td>
+        <td><strong>AppColors.purple400</strong></td>
+        <td><code>#AB47BC</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:91</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #9C27B0"></div></td>
+        <td><strong>AppColors.purple500</strong></td>
+        <td><code>#9C27B0</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:92</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #8E24AA"></div></td>
+        <td><strong>AppColors.purple600</strong></td>
+        <td><code>#8E24AA</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:93</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #7B1FA2"></div></td>
+        <td><strong>AppColors.purple700</strong></td>
+        <td><code>#7B1FA2</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:94</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #6A1B9A"></div></td>
+        <td><strong>AppColors.purple800</strong></td>
+        <td><code>#6A1B9A</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:95</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #4A148C"></div></td>
+        <td><strong>AppColors.purple900</strong></td>
+        <td><code>#4A148C</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:96</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFFDE7"></div></td>
+        <td><strong>AppColors.yellow50</strong></td>
+        <td><code>#FFFDE7</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:101</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFF9C4"></div></td>
+        <td><strong>AppColors.yellow100</strong></td>
+        <td><code>#FFF9C4</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:102</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFF59D"></div></td>
+        <td><strong>AppColors.yellow200</strong></td>
+        <td><code>#FFF59D</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:103</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFF176"></div></td>
+        <td><strong>AppColors.yellow300</strong></td>
+        <td><code>#FFF176</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:104</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFEE58"></div></td>
+        <td><strong>AppColors.yellow400</strong></td>
+        <td><code>#FFEE58</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:105</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFEB3B"></div></td>
+        <td><strong>AppColors.yellow500</strong></td>
+        <td><code>#FFEB3B</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:106</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FDD835"></div></td>
+        <td><strong>AppColors.yellow600</strong></td>
+        <td><code>#FDD835</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:107</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FBC02D"></div></td>
+        <td><strong>AppColors.yellow700</strong></td>
+        <td><code>#FBC02D</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:108</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #F9A825"></div></td>
+        <td><strong>AppColors.yellow800</strong></td>
+        <td><code>#F9A825</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:109</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #F57F17"></div></td>
+        <td><strong>AppColors.yellow900</strong></td>
+        <td><code>#F57F17</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:110</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #90CAF9"></div></td>
+        <td><strong>AppColors.primaryLight</strong></td>
+        <td><code>#90CAF9</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:11</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #388E3C"></div></td>
+        <td><strong>AppColors.accentGreen</strong></td>
+        <td><code>#388E3C</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:16</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FF9800"></div></td>
+        <td><strong>AppColors.accentOrange</strong></td>
+        <td><code>#FF9800</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:17</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFEBEE"></div></td>
+        <td><strong>AppColors.red50</strong></td>
+        <td><code>#FFEBEE</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:59</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFCDD2"></div></td>
+        <td><strong>AppColors.red100</strong></td>
+        <td><code>#FFCDD2</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:60</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #EF9A9A"></div></td>
+        <td><strong>AppColors.red200</strong></td>
+        <td><code>#EF9A9A</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:61</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E57373"></div></td>
+        <td><strong>AppColors.red300</strong></td>
+        <td><code>#E57373</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:62</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #EF5350"></div></td>
+        <td><strong>AppColors.red400</strong></td>
+        <td><code>#EF5350</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:63</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #F44336"></div></td>
+        <td><strong>AppColors.red500</strong></td>
+        <td><code>#F44336</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:64</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E53935"></div></td>
+        <td><strong>AppColors.red600</strong></td>
+        <td><code>#E53935</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:65</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #D32F2F"></div></td>
+        <td><strong>AppColors.red700</strong></td>
+        <td><code>#D32F2F</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:66</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #121212"></div></td>
+        <td><strong>AppColors.backgroundDark</strong></td>
+        <td><code>#121212</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:130</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #6D4C41"></div></td>
+        <td><strong>AppColors.unused5</strong></td>
+        <td><code>#6D4C41</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:204</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1E1E1E"></div></td>
+        <td><strong>AppColors.surfaceDark</strong></td>
+        <td><code>#1E1E1E</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:132</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #C62828"></div></td>
+        <td><strong>AppColors.red800</strong></td>
+        <td><code>#C62828</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:67</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #B71C1C"></div></td>
+        <td><strong>AppColors.red900</strong></td>
+        <td><code>#B71C1C</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:68</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFF3E0"></div></td>
+        <td><strong>AppColors.orange50</strong></td>
+        <td><code>#FFF3E0</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:73</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFE0B2"></div></td>
+        <td><strong>AppColors.orange100</strong></td>
+        <td><code>#FFE0B2</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:74</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFFFFF"></div></td>
+        <td><strong>AppColors.textOnSecondary</strong></td>
+        <td><code>#FFFFFF</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:141</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #9C27B0"></div></td>
+        <td><strong>AppColors.accentPurple</strong></td>
+        <td><code>#9C27B0</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:18</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFB74D"></div></td>
+        <td><strong>AppColors.orange300</strong></td>
+        <td><code>#FFB74D</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:76</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFA726"></div></td>
+        <td><strong>AppColors.orange400</strong></td>
+        <td><code>#FFA726</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:77</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #0D47A1"></div></td>
+        <td><strong>AppColors.primaryDark</strong></td>
+        <td><code>#0D47A1</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:10</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FB8C00"></div></td>
+        <td><strong>AppColors.orange600</strong></td>
+        <td><code>#FB8C00</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:79</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #F57C00"></div></td>
+        <td><strong>AppColors.orange700</strong></td>
+        <td><code>#F57C00</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:80</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #F5F5F5"></div></td>
+        <td><strong>AppColors.inputBackground</strong></td>
+        <td><code>#F5F5F5</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:154</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #BDBDBD"></div></td>
+        <td><strong>AppColors.inputBorder</strong></td>
+        <td><code>#BDBDBD</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:155</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1976D2"></div></td>
+        <td><strong>AppColors.inputFocusBorder</strong></td>
+        <td><code>#1976D2</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:156</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #D32F2F"></div></td>
+        <td><strong>AppColors.inputErrorBorder</strong></td>
+        <td><code>#D32F2F</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:157</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #EF6C00"></div></td>
+        <td><strong>AppColors.orange800</strong></td>
+        <td><code>#EF6C00</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:81</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #000000"></div></td>
+        <td><strong>AppColors.shadow</strong></td>
+        <td><code>#000000</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:160</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #000000"></div></td>
+        <td><strong>AppColors.overlay</strong></td>
+        <td><code>#000000</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:161</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #9C27B0"></div></td>
+        <td><strong>AppColors.legacyPurple</strong></td>
+        <td><code>#9C27B0</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:166</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #607D8B"></div></td>
+        <td><strong>AppColors.oldButtonColor</strong></td>
+        <td><code>#607D8B</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:167</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E91E63"></div></td>
+        <td><strong>AppColors.deprecatedPink</strong></td>
+        <td><code>#E91E63</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:168</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #00BCD4"></div></td>
+        <td><strong>AppColors.oldAccentCyan</strong></td>
+        <td><code>#00BCD4</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:169</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #CDDC39"></div></td>
+        <td><strong>AppColors.legacyLime</strong></td>
+        <td><code>#CDDC39</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:170</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1976D2"></div></td>
+        <td><strong>AppColors.brandPrimary</strong></td>
+        <td><code>#1976D2</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:175</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #388E3C"></div></td>
+        <td><strong>AppColors.brandSecondary</strong></td>
+        <td><code>#388E3C</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:176</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FF9800"></div></td>
+        <td><strong>AppColors.brandTertiary</strong></td>
+        <td><code>#FF9800</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:177</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #1976D2"></div></td>
+        <td><strong>AppColors.linkBlue</strong></td>
+        <td><code>#1976D2</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:182</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #7B1FA2"></div></td>
+        <td><strong>AppColors.linkVisited</strong></td>
+        <td><code>#7B1FA2</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:183</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #2196F3"></div></td>
+        <td><strong>AppColors.chartColor1</strong></td>
+        <td><code>#2196F3</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:188</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #4CAF50"></div></td>
+        <td><strong>AppColors.chartColor2</strong></td>
+        <td><code>#4CAF50</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:189</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FF9800"></div></td>
+        <td><strong>AppColors.chartColor3</strong></td>
+        <td><code>#FF9800</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:190</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #9C27B0"></div></td>
+        <td><strong>AppColors.chartColor4</strong></td>
+        <td><code>#9C27B0</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:191</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #F44336"></div></td>
+        <td><strong>AppColors.chartColor5</strong></td>
+        <td><code>#F44336</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:192</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #00BCD4"></div></td>
+        <td><strong>AppColors.chartColor6</strong></td>
+        <td><code>#00BCD4</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:193</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFEB3B"></div></td>
+        <td><strong>AppColors.chartColor7</strong></td>
+        <td><code>#FFEB3B</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:194</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #E91E63"></div></td>
+        <td><strong>AppColors.chartColor8</strong></td>
+        <td><code>#E91E63</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:195</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #795548"></div></td>
+        <td><strong>AppColors.unused1</strong></td>
+        <td><code>#795548</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:200</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #9E9D24"></div></td>
+        <td><strong>AppColors.unused2</strong></td>
+        <td><code>#9E9D24</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:201</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #5D4037"></div></td>
+        <td><strong>AppColors.unused3</strong></td>
+        <td><code>#5D4037</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:202</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #455A64"></div></td>
+        <td><strong>AppColors.unused4</strong></td>
+        <td><code>#455A64</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:203</small></td>
+      </tr>
+      <tr>
+        <td><div class="color-swatch" style="background-color: #FFFFFF"></div></td>
+        <td><strong>AppColors.surfaceLight</strong></td>
+        <td><code>#FFFFFF</code></td>
+        <td><span class="usage-badge">0</span></td>
+        <td>0</td>
+        <td><small>app_colors.dart:131</small></td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>

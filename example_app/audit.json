@@ -1,0 +1,1991 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-29T13:02:08.930195",
+    "total_files": 6,
+    "total_colors": 125,
+    "total_usages": 56
+  },
+  "color_definitions": [
+    {
+      "name": "primaryBlue",
+      "qualified_name": "AppColors.primaryBlue",
+      "value": "0xFF1976D2",
+      "rgb_hex": "#1976D2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 9,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "primaryDark",
+      "qualified_name": "AppColors.primaryDark",
+      "value": "0xFF0D47A1",
+      "rgb_hex": "#0D47A1",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 10,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "primaryLight",
+      "qualified_name": "AppColors.primaryLight",
+      "value": "0xFF90CAF9",
+      "rgb_hex": "#90CAF9",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 11,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "accentGreen",
+      "qualified_name": "AppColors.accentGreen",
+      "value": "0xFF388E3C",
+      "rgb_hex": "#388E3C",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 16,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "accentOrange",
+      "qualified_name": "AppColors.accentOrange",
+      "value": "0xFFFF9800",
+      "rgb_hex": "#FF9800",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 17,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "accentPurple",
+      "qualified_name": "AppColors.accentPurple",
+      "value": "0xFF9C27B0",
+      "rgb_hex": "#9C27B0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 18,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "errorRed",
+      "qualified_name": "AppColors.errorRed",
+      "value": "0xFFD32F2F",
+      "rgb_hex": "#D32F2F",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 23,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "warningYellow",
+      "qualified_name": "AppColors.warningYellow",
+      "value": "0xFFFBC02D",
+      "rgb_hex": "#FBC02D",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 24,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "successGreen",
+      "qualified_name": "AppColors.successGreen",
+      "value": "0xFF2E7D32",
+      "rgb_hex": "#2E7D32",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 25,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "infoBlue",
+      "qualified_name": "AppColors.infoBlue",
+      "value": "0xFF0288D1",
+      "rgb_hex": "#0288D1",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 26,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue50",
+      "qualified_name": "AppColors.blue50",
+      "value": "0xFFE3F2FD",
+      "rgb_hex": "#E3F2FD",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 31,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue100",
+      "qualified_name": "AppColors.blue100",
+      "value": "0xFFBBDEFB",
+      "rgb_hex": "#BBDEFB",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 32,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue200",
+      "qualified_name": "AppColors.blue200",
+      "value": "0xFF90CAF9",
+      "rgb_hex": "#90CAF9",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 33,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue300",
+      "qualified_name": "AppColors.blue300",
+      "value": "0xFF64B5F6",
+      "rgb_hex": "#64B5F6",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 34,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue400",
+      "qualified_name": "AppColors.blue400",
+      "value": "0xFF42A5F5",
+      "rgb_hex": "#42A5F5",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 35,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue500",
+      "qualified_name": "AppColors.blue500",
+      "value": "0xFF2196F3",
+      "rgb_hex": "#2196F3",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 36,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue600",
+      "qualified_name": "AppColors.blue600",
+      "value": "0xFF1E88E5",
+      "rgb_hex": "#1E88E5",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 37,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue700",
+      "qualified_name": "AppColors.blue700",
+      "value": "0xFF1976D2",
+      "rgb_hex": "#1976D2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 38,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue800",
+      "qualified_name": "AppColors.blue800",
+      "value": "0xFF1565C0",
+      "rgb_hex": "#1565C0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 39,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "blue900",
+      "qualified_name": "AppColors.blue900",
+      "value": "0xFF0D47A1",
+      "rgb_hex": "#0D47A1",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 40,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green50",
+      "qualified_name": "AppColors.green50",
+      "value": "0xFFE8F5E9",
+      "rgb_hex": "#E8F5E9",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 45,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green100",
+      "qualified_name": "AppColors.green100",
+      "value": "0xFFC8E6C9",
+      "rgb_hex": "#C8E6C9",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 46,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green200",
+      "qualified_name": "AppColors.green200",
+      "value": "0xFFA5D6A7",
+      "rgb_hex": "#A5D6A7",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 47,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green300",
+      "qualified_name": "AppColors.green300",
+      "value": "0xFF81C784",
+      "rgb_hex": "#81C784",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 48,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green400",
+      "qualified_name": "AppColors.green400",
+      "value": "0xFF66BB6A",
+      "rgb_hex": "#66BB6A",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 49,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green500",
+      "qualified_name": "AppColors.green500",
+      "value": "0xFF4CAF50",
+      "rgb_hex": "#4CAF50",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 50,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green600",
+      "qualified_name": "AppColors.green600",
+      "value": "0xFF43A047",
+      "rgb_hex": "#43A047",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 51,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green700",
+      "qualified_name": "AppColors.green700",
+      "value": "0xFF388E3C",
+      "rgb_hex": "#388E3C",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 52,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green800",
+      "qualified_name": "AppColors.green800",
+      "value": "0xFF2E7D32",
+      "rgb_hex": "#2E7D32",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 53,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "green900",
+      "qualified_name": "AppColors.green900",
+      "value": "0xFF1B5E20",
+      "rgb_hex": "#1B5E20",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 54,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red50",
+      "qualified_name": "AppColors.red50",
+      "value": "0xFFFFEBEE",
+      "rgb_hex": "#FFEBEE",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 59,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red100",
+      "qualified_name": "AppColors.red100",
+      "value": "0xFFFFCDD2",
+      "rgb_hex": "#FFCDD2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 60,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red200",
+      "qualified_name": "AppColors.red200",
+      "value": "0xFFEF9A9A",
+      "rgb_hex": "#EF9A9A",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 61,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red300",
+      "qualified_name": "AppColors.red300",
+      "value": "0xFFE57373",
+      "rgb_hex": "#E57373",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 62,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red400",
+      "qualified_name": "AppColors.red400",
+      "value": "0xFFEF5350",
+      "rgb_hex": "#EF5350",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 63,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red500",
+      "qualified_name": "AppColors.red500",
+      "value": "0xFFF44336",
+      "rgb_hex": "#F44336",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 64,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red600",
+      "qualified_name": "AppColors.red600",
+      "value": "0xFFE53935",
+      "rgb_hex": "#E53935",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 65,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red700",
+      "qualified_name": "AppColors.red700",
+      "value": "0xFFD32F2F",
+      "rgb_hex": "#D32F2F",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 66,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red800",
+      "qualified_name": "AppColors.red800",
+      "value": "0xFFC62828",
+      "rgb_hex": "#C62828",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 67,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "red900",
+      "qualified_name": "AppColors.red900",
+      "value": "0xFFB71C1C",
+      "rgb_hex": "#B71C1C",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 68,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange50",
+      "qualified_name": "AppColors.orange50",
+      "value": "0xFFFFF3E0",
+      "rgb_hex": "#FFF3E0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 73,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange100",
+      "qualified_name": "AppColors.orange100",
+      "value": "0xFFFFE0B2",
+      "rgb_hex": "#FFE0B2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 74,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange200",
+      "qualified_name": "AppColors.orange200",
+      "value": "0xFFFFCC80",
+      "rgb_hex": "#FFCC80",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 75,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange300",
+      "qualified_name": "AppColors.orange300",
+      "value": "0xFFFFB74D",
+      "rgb_hex": "#FFB74D",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 76,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange400",
+      "qualified_name": "AppColors.orange400",
+      "value": "0xFFFFA726",
+      "rgb_hex": "#FFA726",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 77,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange500",
+      "qualified_name": "AppColors.orange500",
+      "value": "0xFFFF9800",
+      "rgb_hex": "#FF9800",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 78,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange600",
+      "qualified_name": "AppColors.orange600",
+      "value": "0xFFFB8C00",
+      "rgb_hex": "#FB8C00",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 79,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange700",
+      "qualified_name": "AppColors.orange700",
+      "value": "0xFFF57C00",
+      "rgb_hex": "#F57C00",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 80,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange800",
+      "qualified_name": "AppColors.orange800",
+      "value": "0xFFEF6C00",
+      "rgb_hex": "#EF6C00",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 81,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "orange900",
+      "qualified_name": "AppColors.orange900",
+      "value": "0xFFE65100",
+      "rgb_hex": "#E65100",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 82,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple50",
+      "qualified_name": "AppColors.purple50",
+      "value": "0xFFF3E5F5",
+      "rgb_hex": "#F3E5F5",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 87,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple100",
+      "qualified_name": "AppColors.purple100",
+      "value": "0xFFE1BEE7",
+      "rgb_hex": "#E1BEE7",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 88,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple200",
+      "qualified_name": "AppColors.purple200",
+      "value": "0xFFCE93D8",
+      "rgb_hex": "#CE93D8",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 89,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple300",
+      "qualified_name": "AppColors.purple300",
+      "value": "0xFFBA68C8",
+      "rgb_hex": "#BA68C8",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 90,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple400",
+      "qualified_name": "AppColors.purple400",
+      "value": "0xFFAB47BC",
+      "rgb_hex": "#AB47BC",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 91,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple500",
+      "qualified_name": "AppColors.purple500",
+      "value": "0xFF9C27B0",
+      "rgb_hex": "#9C27B0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 92,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple600",
+      "qualified_name": "AppColors.purple600",
+      "value": "0xFF8E24AA",
+      "rgb_hex": "#8E24AA",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 93,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple700",
+      "qualified_name": "AppColors.purple700",
+      "value": "0xFF7B1FA2",
+      "rgb_hex": "#7B1FA2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 94,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple800",
+      "qualified_name": "AppColors.purple800",
+      "value": "0xFF6A1B9A",
+      "rgb_hex": "#6A1B9A",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 95,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "purple900",
+      "qualified_name": "AppColors.purple900",
+      "value": "0xFF4A148C",
+      "rgb_hex": "#4A148C",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 96,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow50",
+      "qualified_name": "AppColors.yellow50",
+      "value": "0xFFFFFDE7",
+      "rgb_hex": "#FFFDE7",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 101,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow100",
+      "qualified_name": "AppColors.yellow100",
+      "value": "0xFFFFF9C4",
+      "rgb_hex": "#FFF9C4",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 102,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow200",
+      "qualified_name": "AppColors.yellow200",
+      "value": "0xFFFFF59D",
+      "rgb_hex": "#FFF59D",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 103,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow300",
+      "qualified_name": "AppColors.yellow300",
+      "value": "0xFFFFF176",
+      "rgb_hex": "#FFF176",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 104,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow400",
+      "qualified_name": "AppColors.yellow400",
+      "value": "0xFFFFEE58",
+      "rgb_hex": "#FFEE58",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 105,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow500",
+      "qualified_name": "AppColors.yellow500",
+      "value": "0xFFFFEB3B",
+      "rgb_hex": "#FFEB3B",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 106,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow600",
+      "qualified_name": "AppColors.yellow600",
+      "value": "0xFFFDD835",
+      "rgb_hex": "#FDD835",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 107,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow700",
+      "qualified_name": "AppColors.yellow700",
+      "value": "0xFFFBC02D",
+      "rgb_hex": "#FBC02D",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 108,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow800",
+      "qualified_name": "AppColors.yellow800",
+      "value": "0xFFF9A825",
+      "rgb_hex": "#F9A825",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 109,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "yellow900",
+      "qualified_name": "AppColors.yellow900",
+      "value": "0xFFF57F17",
+      "rgb_hex": "#F57F17",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 110,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey50",
+      "qualified_name": "AppColors.grey50",
+      "value": "0xFFFAFAFA",
+      "rgb_hex": "#FAFAFA",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 115,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey100",
+      "qualified_name": "AppColors.grey100",
+      "value": "0xFFF5F5F5",
+      "rgb_hex": "#F5F5F5",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 116,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey200",
+      "qualified_name": "AppColors.grey200",
+      "value": "0xFFEEEEEE",
+      "rgb_hex": "#EEEEEE",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 117,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey300",
+      "qualified_name": "AppColors.grey300",
+      "value": "0xFFE0E0E0",
+      "rgb_hex": "#E0E0E0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 118,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey400",
+      "qualified_name": "AppColors.grey400",
+      "value": "0xFFBDBDBD",
+      "rgb_hex": "#BDBDBD",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 119,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey500",
+      "qualified_name": "AppColors.grey500",
+      "value": "0xFF9E9E9E",
+      "rgb_hex": "#9E9E9E",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 120,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey600",
+      "qualified_name": "AppColors.grey600",
+      "value": "0xFF757575",
+      "rgb_hex": "#757575",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 121,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey700",
+      "qualified_name": "AppColors.grey700",
+      "value": "0xFF616161",
+      "rgb_hex": "#616161",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 122,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey800",
+      "qualified_name": "AppColors.grey800",
+      "value": "0xFF424242",
+      "rgb_hex": "#424242",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 123,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "grey900",
+      "qualified_name": "AppColors.grey900",
+      "value": "0xFF212121",
+      "rgb_hex": "#212121",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 124,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "backgroundLight",
+      "qualified_name": "AppColors.backgroundLight",
+      "value": "0xFFFAFAFA",
+      "rgb_hex": "#FAFAFA",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 129,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "backgroundDark",
+      "qualified_name": "AppColors.backgroundDark",
+      "value": "0xFF121212",
+      "rgb_hex": "#121212",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 130,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "surfaceLight",
+      "qualified_name": "AppColors.surfaceLight",
+      "value": "0xFFFFFFFF",
+      "rgb_hex": "#FFFFFF",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 131,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "surfaceDark",
+      "qualified_name": "AppColors.surfaceDark",
+      "value": "0xFF1E1E1E",
+      "rgb_hex": "#1E1E1E",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 132,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "textPrimary",
+      "qualified_name": "AppColors.textPrimary",
+      "value": "0xFF212121",
+      "rgb_hex": "#212121",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 137,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "textSecondary",
+      "qualified_name": "AppColors.textSecondary",
+      "value": "0xFF757575",
+      "rgb_hex": "#757575",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 138,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "textDisabled",
+      "qualified_name": "AppColors.textDisabled",
+      "value": "0xFFBDBDBD",
+      "rgb_hex": "#BDBDBD",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 139,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "textOnPrimary",
+      "qualified_name": "AppColors.textOnPrimary",
+      "value": "0xFFFFFFFF",
+      "rgb_hex": "#FFFFFF",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 140,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "textOnSecondary",
+      "qualified_name": "AppColors.textOnSecondary",
+      "value": "0xFFFFFFFF",
+      "rgb_hex": "#FFFFFF",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 141,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "buttonPrimary",
+      "qualified_name": "AppColors.buttonPrimary",
+      "value": "0xFF1976D2",
+      "rgb_hex": "#1976D2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 146,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "buttonSecondary",
+      "qualified_name": "AppColors.buttonSecondary",
+      "value": "0xFF388E3C",
+      "rgb_hex": "#388E3C",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 147,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "buttonDisabled",
+      "qualified_name": "AppColors.buttonDisabled",
+      "value": "0xFFBDBDBD",
+      "rgb_hex": "#BDBDBD",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 148,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "cardBackground",
+      "qualified_name": "AppColors.cardBackground",
+      "value": "0xFFFFFFFF",
+      "rgb_hex": "#FFFFFF",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 150,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "cardBorder",
+      "qualified_name": "AppColors.cardBorder",
+      "value": "0xFFE0E0E0",
+      "rgb_hex": "#E0E0E0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 151,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "cardShadow",
+      "qualified_name": "AppColors.cardShadow",
+      "value": "0x1F000000",
+      "rgb_hex": "#000000",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 152,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "inputBackground",
+      "qualified_name": "AppColors.inputBackground",
+      "value": "0xFFF5F5F5",
+      "rgb_hex": "#F5F5F5",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 154,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "inputBorder",
+      "qualified_name": "AppColors.inputBorder",
+      "value": "0xFFBDBDBD",
+      "rgb_hex": "#BDBDBD",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 155,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "inputFocusBorder",
+      "qualified_name": "AppColors.inputFocusBorder",
+      "value": "0xFF1976D2",
+      "rgb_hex": "#1976D2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 156,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "inputErrorBorder",
+      "qualified_name": "AppColors.inputErrorBorder",
+      "value": "0xFFD32F2F",
+      "rgb_hex": "#D32F2F",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 157,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "divider",
+      "qualified_name": "AppColors.divider",
+      "value": "0xFFE0E0E0",
+      "rgb_hex": "#E0E0E0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 159,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "shadow",
+      "qualified_name": "AppColors.shadow",
+      "value": "0x1F000000",
+      "rgb_hex": "#000000",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 160,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "overlay",
+      "qualified_name": "AppColors.overlay",
+      "value": "0x66000000",
+      "rgb_hex": "#000000",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 161,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "legacyPurple",
+      "qualified_name": "AppColors.legacyPurple",
+      "value": "0xFF9C27B0",
+      "rgb_hex": "#9C27B0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 166,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "oldButtonColor",
+      "qualified_name": "AppColors.oldButtonColor",
+      "value": "0xFF607D8B",
+      "rgb_hex": "#607D8B",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 167,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "deprecatedPink",
+      "qualified_name": "AppColors.deprecatedPink",
+      "value": "0xFFE91E63",
+      "rgb_hex": "#E91E63",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 168,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "oldAccentCyan",
+      "qualified_name": "AppColors.oldAccentCyan",
+      "value": "0xFF00BCD4",
+      "rgb_hex": "#00BCD4",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 169,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "legacyLime",
+      "qualified_name": "AppColors.legacyLime",
+      "value": "0xFFCDDC39",
+      "rgb_hex": "#CDDC39",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 170,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "brandPrimary",
+      "qualified_name": "AppColors.brandPrimary",
+      "value": "0xFF1976D2",
+      "rgb_hex": "#1976D2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 175,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "brandSecondary",
+      "qualified_name": "AppColors.brandSecondary",
+      "value": "0xFF388E3C",
+      "rgb_hex": "#388E3C",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 176,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "brandTertiary",
+      "qualified_name": "AppColors.brandTertiary",
+      "value": "0xFFFF9800",
+      "rgb_hex": "#FF9800",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 177,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "linkBlue",
+      "qualified_name": "AppColors.linkBlue",
+      "value": "0xFF1976D2",
+      "rgb_hex": "#1976D2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 182,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "linkVisited",
+      "qualified_name": "AppColors.linkVisited",
+      "value": "0xFF7B1FA2",
+      "rgb_hex": "#7B1FA2",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 183,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "chartColor1",
+      "qualified_name": "AppColors.chartColor1",
+      "value": "0xFF2196F3",
+      "rgb_hex": "#2196F3",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 188,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "chartColor2",
+      "qualified_name": "AppColors.chartColor2",
+      "value": "0xFF4CAF50",
+      "rgb_hex": "#4CAF50",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 189,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "chartColor3",
+      "qualified_name": "AppColors.chartColor3",
+      "value": "0xFFFF9800",
+      "rgb_hex": "#FF9800",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 190,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "chartColor4",
+      "qualified_name": "AppColors.chartColor4",
+      "value": "0xFF9C27B0",
+      "rgb_hex": "#9C27B0",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 191,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "chartColor5",
+      "qualified_name": "AppColors.chartColor5",
+      "value": "0xFFF44336",
+      "rgb_hex": "#F44336",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 192,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "chartColor6",
+      "qualified_name": "AppColors.chartColor6",
+      "value": "0xFF00BCD4",
+      "rgb_hex": "#00BCD4",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 193,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "chartColor7",
+      "qualified_name": "AppColors.chartColor7",
+      "value": "0xFFFFEB3B",
+      "rgb_hex": "#FFEB3B",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 194,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "chartColor8",
+      "qualified_name": "AppColors.chartColor8",
+      "value": "0xFFE91E63",
+      "rgb_hex": "#E91E63",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 195,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "unused1",
+      "qualified_name": "AppColors.unused1",
+      "value": "0xFF795548",
+      "rgb_hex": "#795548",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 200,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "unused2",
+      "qualified_name": "AppColors.unused2",
+      "value": "0xFF9E9D24",
+      "rgb_hex": "#9E9D24",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 201,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "unused3",
+      "qualified_name": "AppColors.unused3",
+      "value": "0xFF5D4037",
+      "rgb_hex": "#5D4037",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 202,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "unused4",
+      "qualified_name": "AppColors.unused4",
+      "value": "0xFF455A64",
+      "rgb_hex": "#455A64",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 203,
+      "is_const": true,
+      "is_static": true
+    },
+    {
+      "name": "unused5",
+      "qualified_name": "AppColors.unused5",
+      "value": "0xFF6D4C41",
+      "rgb_hex": "#6D4C41",
+      "file_path": "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/constants/app_colors.dart",
+      "line_number": 204,
+      "is_const": true,
+      "is_static": true
+    }
+  ],
+  "usage_statistics": {
+    "AppColors.primaryBlue": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.primaryDark": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.primaryLight": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.accentGreen": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.accentOrange": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.accentPurple": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.errorRed": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/status_badge.dart"
+      ]
+    },
+    "AppColors.warningYellow": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/status_badge.dart"
+      ]
+    },
+    "AppColors.successGreen": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/status_badge.dart"
+      ]
+    },
+    "AppColors.infoBlue": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/status_badge.dart"
+      ]
+    },
+    "AppColors.blue50": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue100": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue200": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue300": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue400": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue500": {
+      "usage_count": 2,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart",
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue600": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue700": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue800": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.blue900": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green50": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green100": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green200": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green300": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green400": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green500": {
+      "usage_count": 2,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart",
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green600": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green700": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green800": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.green900": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.red50": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red100": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red200": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red300": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red400": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red500": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red600": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red700": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red800": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.red900": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange50": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange100": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange200": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange300": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange400": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange500": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.orange600": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange700": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange800": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.orange900": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple50": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple100": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple200": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple300": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple400": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple500": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple600": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple700": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple800": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.purple900": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow50": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow100": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow200": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow300": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow400": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow500": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow600": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow700": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow800": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.yellow900": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.grey50": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey100": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey200": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey300": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey400": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey500": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey600": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey700": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey800": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.grey900": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.backgroundLight": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.backgroundDark": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.surfaceLight": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.surfaceDark": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.textPrimary": {
+      "usage_count": 3,
+      "file_count": 3,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart",
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/status_badge.dart",
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/custom_card.dart"
+      ]
+    },
+    "AppColors.textSecondary": {
+      "usage_count": 3,
+      "file_count": 2,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart",
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart",
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/custom_card.dart"
+      ]
+    },
+    "AppColors.textDisabled": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/custom_button.dart"
+      ]
+    },
+    "AppColors.textOnPrimary": {
+      "usage_count": 3,
+      "file_count": 3,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart",
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/status_badge.dart",
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/custom_button.dart"
+      ]
+    },
+    "AppColors.textOnSecondary": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.buttonPrimary": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.buttonSecondary": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.buttonDisabled": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.cardBackground": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/custom_card.dart"
+      ]
+    },
+    "AppColors.cardBorder": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/custom_card.dart"
+      ]
+    },
+    "AppColors.cardShadow": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/widgets/custom_card.dart"
+      ]
+    },
+    "AppColors.inputBackground": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.inputBorder": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.inputFocusBorder": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.inputErrorBorder": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.divider": {
+      "usage_count": 1,
+      "file_count": 1,
+      "usage_locations": [
+        "/home/shankarganeshi/PlayGround/AI-Assisted-Color-System-Migration-Flutter/example_app/lib/screens/home_screen.dart"
+      ]
+    },
+    "AppColors.shadow": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.overlay": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.legacyPurple": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.oldButtonColor": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.deprecatedPink": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.oldAccentCyan": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.legacyLime": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.brandPrimary": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.brandSecondary": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.brandTertiary": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.linkBlue": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.linkVisited": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.chartColor1": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.chartColor2": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.chartColor3": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.chartColor4": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.chartColor5": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.chartColor6": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.chartColor7": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.chartColor8": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.unused1": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.unused2": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.unused3": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.unused4": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    },
+    "AppColors.unused5": {
+      "usage_count": 0,
+      "file_count": 0,
+      "usage_locations": []
+    }
+  }
+}
