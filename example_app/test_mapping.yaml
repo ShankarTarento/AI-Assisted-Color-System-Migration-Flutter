@@ -1,0 +1,61 @@
+# Color Mapping Configuration with actual mappings for testing
+version: "1.0"
+
+# Core colors mapped to ColorScheme
+strict_mappings:
+  AppColors.primaryBlue:
+    target: colorScheme.primary
+    verify_value: "0xFF1976D2"
+    description: "Primary brand blue"
+  
+  AppColors.errorRed:
+    target: colorScheme.error
+    verify_value: "0xFFD32F2F"
+    description: "Error red"
+  
+  AppColors.successGreen:
+    target: colorScheme.tertiary
+    verify_value: "0xFF2E7D32"
+    description: "Success green"
+  
+  AppColors.textPrimary:
+    target: colorScheme.onSurface
+    verify_value: "0xFF212121"
+    description: "Primary text color"
+  
+  AppColors.textOnPrimary:
+    target: colorScheme.onPrimary
+    verify_value: "0xFFFFFFFF"
+    description: "Text on primary"
+  
+  AppColors.backgroundLight:
+    target: colorScheme.background
+    verify_value: "0xFFFAFAFA"
+    description: "Light background"
+
+# Non-core colors grouped into extensions
+extensions:
+  BrandColors:
+    AppColors.blue500:
+      target: blue500
+      value: "#2196F3"
+    AppColors.green500:
+      target: green500
+      value: "#4CAF50"
+    AppColors.orange500:
+      target: orange500
+      value: "#FF9800"
+
+# Colors to preserve unchanged
+preserved:
+  - AppColors.textSecondary
+  - AppColors.cardBackground
+  - AppColors.cardBorder
+  - AppColors.buttonDisabled
+
+# Migration rules
+rules:
+  require_value_match: true
+  block_if_mismatch: true
+  auto_generate: true
+  group_similar_colors: true

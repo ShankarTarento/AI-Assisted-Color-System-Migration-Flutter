@@ -1,0 +1,261 @@
+# Business Requirements Document (BRD)
+
+## Project Title
+
+AI‑Assisted Color System Migration for Large Flutter Applications
+
+---
+
+## 1. Purpose
+
+The purpose of this document is to define the business and functional requirements for an **AI‑assisted system** that safely migrates a large Flutter application from a **large color constants class (200+ colors)** to a **semantic Flutter theming system** (15–20 core theme colors), without breaking UI behavior or brand consistency.
+
+The system focuses on **controlled automation**, **explicit mappings**, and **human‑in‑the‑loop governance**.
+
+---
+
+## 2. Background & Problem Statement
+
+### Current State
+
+* Flutter application contains a large color constants class (e.g., `AppColors`) with 200+ static color definitions
+* Flutter `ThemeData / ColorScheme` contains only 15–20 semantic colors
+* Color usage is inconsistent across the codebase
+* Manual migration is error‑prone and not scalable
+
+### Core Problem
+
+* Many `AppColors` do **not have a one‑to‑one semantic mapping** to Flutter theme colors
+* Automatic collapsing of many colors into a small theme causes UI regressions
+* Teams lack visibility into which colors are core, legacy, or unused
+
+---
+
+## 3. Goals & Objectives
+
+### Primary Goals
+
+* Enable Flutter theme support safely in large applications
+* Preserve visual fidelity during migration
+* Avoid semantic guessing by automation
+
+### Secondary Goals
+
+* Reduce long‑term color sprawl
+* Establish a scalable design‑token foundation
+* Enable gradual cleanup and standardization
+
+---
+
+## 4. Scope
+
+### In Scope
+
+* Static analysis of all color constants and their usage
+* Classification of colors based on usage frequency
+* Explicit mapping of selected colors to Flutter `ColorScheme`
+* Use of `ThemeExtension` for non‑core colors
+* AI‑assisted, rule‑based refactoring of usage sites
+
+### Out of Scope
+
+* Automatic deletion of unused colors
+* UI/UX redesign or rebranding
+* Automatic semantic guessing of color intent
+
+---
+
+## 5. Key Design Principle
+
+> **Color constants (`AppColors`) are treated as a stable source of truth.**
+>
+> Flutter `ThemeData` represents a **semantic subset**, not a replacement.
+
+---
+
+## 6. Target Users
+
+| Role                | Description                                 |
+| ------------------- | ------------------------------------------- |
+| Flutter Developers  | Maintain and refactor UI code               |
+| Tech Leads          | Define theme semantics and approve mappings |
+| QA Engineers        | Validate UI consistency                     |
+| Design Systems Team | Own color semantics                         |
+
+---
+
+## 7. High‑Level Solution Overview
+
+The solution uses an **AI‑assisted migration pipeline** with strict deterministic rules:
+
+1. Audit existing color usage
+2. Introduce an explicit mapping configuration
+3. Refactor usage sites only when mapping is defined
+4. Preserve all unmapped colors
+5. Enable gradual reduction over time
+
+---
+
+## 8. Color Classification Model
+
+The system shall classify colors into:
+
+| Category         | Description                   |
+| ---------------- | ----------------------------- |
+| Core Colors      | High‑usage, semantic colors   |
+| Variant Colors   | Shades / tints of core colors |
+| Component Colors | UI‑specific colors            |
+| Legacy Colors    | Rarely used or historical     |
+| Unused Colors    | Not referenced anywhere       |
+
+---
+
+## 9. Theme Mapping Strategy
+
+### 9.1 Mapping Configuration (Mandatory)
+
+The system shall rely on an explicit mapping file (e.g., YAML or JSON):
+
+```yaml
+AppColors.primaryBlue:
+  target: colorScheme.primary
+  mode: strict
+
+AppColors.blue200:
+  target: extension.brandBlue200
+  mode: extension
+
+AppColors.legacyPurple:
+  target: keep
+```
+
+### Mapping Modes
+
+| Mode      | Behavior                                               |
+| --------- | ------------------------------------------------------ |
+| strict    | Map to `ColorScheme` after value equality verification |
+| extension | Map to a `ThemeExtension`                              |
+| keep      | Do not refactor                                        |
+
+---
+
+## 10. Functional Requirements
+
+### FR‑1: Color Audit
+
+* System shall scan all Dart files
+* System shall count usage of each color constant
+
+### FR‑2: Color Classification
+
+* System shall classify colors based on usage frequency
+
+### FR‑3: Mapping‑Driven Refactor
+
+* System shall refactor color usage **only if mapping exists**
+* System shall not guess mappings
+
+### FR‑4: Theme Extension Support
+
+* System shall generate and maintain `ThemeExtension` classes
+
+### FR‑5: Safety Rules
+
+* System shall never modify color constant definitions by default
+* System shall never refactor non‑UI usage
+
+---
+
+## 11. Non‑Functional Requirements
+
+| Category     | Requirement             |
+| ------------ | ----------------------- |
+| Safety       | Zero visual regressions |
+| Determinism  | Mapping‑driven behavior |
+| Scalability  | Handle 1,000+ files     |
+| Auditability | Full change reports     |
+
+---
+
+## 12. Technical Requirements
+
+### Static Analysis
+
+* Dart Analyzer API or tree‑sitter
+
+### Color Resolution
+
+* Support `Color(0xAARRGGBB)`
+* Support `Color.fromARGB`
+* Support `Color.fromRGBO`
+* Normalize all colors to canonical ARGB
+
+### AI Responsibilities
+
+* Decision enforcement
+* Diff generation
+* Safety validation
+
+---
+
+## 13. Migration Phases
+
+### Phase 1 — Audit & Metrics
+
+* Identify core vs legacy colors
+
+### Phase 2 — Theme Foundation
+
+* Define `ColorScheme`
+* Define `ThemeExtensions`
+
+### Phase 3 — Controlled Refactor
+
+* Mapping‑based replacements only
+
+### Phase 4 — Gradual Cleanup (Optional)
+
+* Deprecate unused colors
+* Reduce palette size
+
+---
+
+## 14. Risks & Mitigations
+
+| Risk               | Mitigation                       |
+| ------------------ | -------------------------------- |
+| Incorrect mapping  | Explicit config + human approval |
+| Over‑consolidation | ThemeExtension usage             |
+| UI regression      | One‑file diffs + QA              |
+
+---
+
+## 15. Success Metrics
+
+* ≥80% UI coverage using Theme / Extensions
+* Zero production UI regressions
+* Reduction of color constants over time
+
+---
+
+## 16. Assumptions & Constraints
+
+### Assumptions
+
+* Flutter MaterialApp is used
+* Color constants are centralized
+
+### Constraints
+
+* No automatic semantic guessing
+* Human approval required for mappings
+
+---
+
+## 17. Approval
+
+| Role          | Name | Status  |
+| ------------- | ---- | ------- |
+| Product Owner |      | Pending |
+| Tech Lead     |      | Pending |
+| Design Lead   |      | Pending |

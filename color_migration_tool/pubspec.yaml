@@ -1,0 +1,48 @@
+name: color_migration_tool
+description: AI-assisted Flutter color system migration tool - safely migrate from large color constants to semantic theming
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  # Static analysis
+  analyzer: ^6.0.0
+  
+  # CLI utilities
+  args: ^2.4.0
+  cli_util: ^0.4.0
+  
+  # File and path handling
+  path: ^1.8.3
+  glob: ^2.1.2
+  
+  # Data formats
+  yaml: ^3.1.2
+  json_annotation: ^4.8.1
+  
+  # HTTP client for AI APIs
+  http: ^1.1.0
+  
+  # AI integration
+  google_generative_ai: ^0.2.0
+  dotenv: ^4.2.0
+  
+  # Utilities
+  collection: ^1.18.0
+  intl: ^0.18.1
+  crypto: ^3.0.3
+  
+  # Color manipulation
+  color: ^3.0.0
+
+dev_dependencies:
+  test: ^1.24.0
+  mockito: ^5.4.0
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+  lints: ^3.0.0
+  
+executables:
+  color_migrate:

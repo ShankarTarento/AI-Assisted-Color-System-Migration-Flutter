@@ -1,0 +1,16 @@
+# Environment variables
+.env
+
+# Dart/Flutter
+.dart_tool/
+.packages
+build/
+pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Generated files
+*.g.dart
