@@ -9,16 +9,17 @@ import '../models/mapping_config.dart';
 class AIService {
   late final GenerativeModel _model;
   final bool _isEnabled;
+  static final DotEnv _env = DotEnv();
   
   AIService() : _isEnabled = _loadConfig() {
     if (_isEnabled) {
-      final apiKey = env['GEMINI_API_KEY'] ?? '';
+      final apiKey = _env['GEMINI_API_KEY'] ?? '';
       if (apiKey.isEmpty) {
         throw Exception('GEMINI_API_KEY not found in .env file');
       }
       
       _model = GenerativeModel(
-        model: env['AI_MODEL'] ?? 'gemini-pro',
+        model: _env['AI_MODEL'] ?? 'gemini-pro',
         apiKey: apiKey,
       );
     }
@@ -28,8 +29,8 @@ class AIService {
     try {
       final envFile = File('.env');
       if (envFile.existsSync()) {
-        load(envFile.path);
-        return env['ENABLE_AI_SUGGESTIONS']?.toLowerCase() == 'true';
+        _env.load([envFile.path]);
+        return _env['ENABLE_AI_SUGGESTIONS']?.toLowerCase() == 'true';
       }
       return false;
     } catch (e) {
@@ -305,7 +306,7 @@ class ValidationFeedback {
     required this.warnings,
   });
   
-  void print() {
+  void printReport() {
     if (suggestions.isNotEmpty) {
       print('\n💡 AI Suggestions:');
       for (final suggestion in suggestions) {

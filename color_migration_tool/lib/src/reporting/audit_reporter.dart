@@ -10,13 +10,41 @@ class AuditReporter {
     ProjectColorAnalysis analysis,
     String outputPath,
   ) async {
+    // Calculate used and unused colors
+    final usedColors = <Map<String, dynamic>>[];
+    final unusedColors = <Map<String, dynamic>>[];
+    
+    for (final def in analysis.colorDefinitions) {
+      final stats = analysis.usageStats[def.qualifiedName];
+      final usageCount = stats?.usageCount ?? 0;
+      
+      final colorInfo = {
+        'name': def.name,
+        'qualified_name': def.qualifiedName,
+        'value': def.argbHex,
+        'rgb_hex': def.rgbHex,
+        'usage_count': usageCount,
+        'file_count': stats?.fileCount ?? 0,
+      };
+      
+      if (usageCount > 0) {
+        usedColors.add(colorInfo);
+      } else {
+        unusedColors.add(colorInfo);
+      }
+    }
+    
     final report = {
       'metadata': {
         'generated_at': DateTime.now().toIso8601String(),
         'total_files': analysis.totalFiles,
         'total_colors': analysis.uniqueColorCount,
         'total_usages': analysis.totalUsageCount,
+        'used_colors_count': usedColors.length,
+        'unused_colors_count': unusedColors.length,
       },
+      'used_colors': usedColors,
+      'unused_colors': unusedColors,
       'color_definitions': analysis.colorDefinitions.map((def) => {
         'name': def.name,
         'qualified_name': def.qualifiedName,
@@ -85,7 +113,28 @@ class AuditReporter {
   
   /// Print console summary
   void printSummary(ProjectColorAnalysis analysis) {
-    print(analysis.getSummary());
+    // Calculate used and unused colors
+    final usedColors = analysis.colorDefinitions.where((def) {
+      final stats = analysis.usageStats[def.qualifiedName];
+      return stats != null && stats.usageCount > 0;
+    }).toList();
+    
+    final unusedColors = analysis.colorDefinitions.where((def) {
+      final stats = analysis.usageStats[def.qualifiedName];
+      return stats == null || stats.usageCount == 0;
+    }).toList();
+    
+    print('''
+📊 Color Analysis Summary
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Total Files Scanned:    ${analysis.totalFiles}
+Total Colors Defined:   ${analysis.uniqueColorCount}
+  ├─ Used Colors:       ${usedColors.length} (${(usedColors.length / analysis.uniqueColorCount * 100).toStringAsFixed(1)}%)
+  └─ Unused Colors:     ${unusedColors.length} (${(unusedColors.length / analysis.uniqueColorCount * 100).toStringAsFixed(1)}%)
+Total Color Usages:     ${analysis.totalUsageCount}
+Average Usage per Color: ${analysis.totalUsageCount ~/ (analysis.uniqueColorCount > 0 ? analysis.uniqueColorCount : 1)}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+''');
     
     // Top 10 most used colors
     print('🔝 Top 10 Most Used Colors:');
@@ -94,14 +143,32 @@ class AuditReporter {
     final sortedColors = analysis.getColorsSortedByUsage().take(10);
     for (final colorName in sortedColors) {
       final stats = analysis.usageStats[colorName]!;
-      print('  ${colorName.padRight(30)} → ${stats.usageCount} usages in ${stats.fileCount} files');
+      if (stats.usageCount > 0) {
+        print('  ${colorName.padRight(30)} → ${stats.usageCount} usages in ${stats.fileCount} files');
+      }
     }
     
     print('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
+    
+    // Show unused colors warning if any exist
+    if (unusedColors.isNotEmpty) {
+      print('⚠️  ${unusedColors.length} unused colors detected (see report for details)\n');
+    }
   }
   
   String _buildHtmlReport(ProjectColorAnalysis analysis) {
     final sortedColors = analysis.getColorsSortedByUsage();
+    
+    // Calculate used and unused colors
+    final usedColors = analysis.colorDefinitions.where((def) {
+      final stats = analysis.usageStats[def.qualifiedName];
+      return stats != null && stats.usageCount > 0;
+    }).length;
+    
+    final unusedColors = analysis.colorDefinitions.where((def) {
+      final stats = analysis.usageStats[def.qualifiedName];
+      return stats == null || stats.usageCount == 0;
+    }).length;
     
     return '''
 <!DOCTYPE html>
@@ -124,6 +191,34 @@ class AuditReporter {
       margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .stat-card {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 6px;
+      border-left: 4px solid #1976D2;
+    }
+    .stat-card.used {
+      border-left-color: #4CAF50;
+    }
+    .stat-card.unused {
+      border-left-color: #FF9800;
+    }
+    .stat-value {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1976D2;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
     table {
       width: 100%;
       background: white;
@@ -143,6 +238,7 @@ class AuditReporter {
       border-bottom: 1px solid #eee;
     }
     tr:hover { background: #f5f5f5; }
+    tr.unused { opacity: 0.5; }
     .color-swatch {
       width: 40px;
       height: 40px;
@@ -158,6 +254,9 @@ class AuditReporter {
       font-size: 12px;
       font-weight: bold;
     }
+    .usage-badge.unused {
+      background: #FF9800;
+    }
   </style>
 </head>
 <body>
@@ -165,10 +264,29 @@ class AuditReporter {
   
   <div class="summary">
     <h2>Summary</h2>
-    <p><strong>Total Files:</strong> ${analysis.totalFiles}</p>
-    <p><strong>Unique Colors:</strong> ${analysis.uniqueColorCount}</p>
-    <p><strong>Total Usages:</strong> ${analysis.totalUsageCount}</p>
-    <p><strong>Generated:</strong> ${DateTime.now()}</p>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value">${analysis.totalFiles}</div>
+        <div class="stat-label">Total Files</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">${analysis.uniqueColorCount}</div>
+        <div class="stat-label">Unique Colors</div>
+      </div>
+      <div class="stat-card used">
+        <div class="stat-value">$usedColors</div>
+        <div class="stat-label">Used Colors (${(usedColors / analysis.uniqueColorCount * 100).toStringAsFixed(1)}%)</div>
+      </div>
+      <div class="stat-card unused">
+        <div class="stat-value">$unusedColors</div>
+        <div class="stat-label">Unused Colors (${(unusedColors / analysis.uniqueColorCount * 100).toStringAsFixed(1)}%)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">${analysis.totalUsageCount}</div>
+        <div class="stat-label">Total Usages</div>
+      </div>
+    </div>
+    <p style="margin-top: 15px; color: #666;"><strong>Generated:</strong> ${DateTime.now()}</p>
   </div>
   
   <h2>Color Definitions</h2>
@@ -187,12 +305,13 @@ class AuditReporter {
 ${sortedColors.map((colorName) {
   final def = analysis.colorDefinitions.firstWhere((d) => d.qualifiedName == colorName);
   final stats = analysis.usageStats[colorName]!;
+  final isUnused = stats.usageCount == 0;
   return '''
-      <tr>
+      <tr${isUnused ? ' class="unused"' : ''}>
         <td><div class="color-swatch" style="background-color: ${def.rgbHex}"></div></td>
         <td><strong>${def.qualifiedName}</strong></td>
         <td><code>${def.rgbHex}</code></td>
-        <td><span class="usage-badge">${stats.usageCount}</span></td>
+        <td><span class="usage-badge${isUnused ? ' unused' : ''}">${stats.usageCount}</span></td>
         <td>${stats.fileCount}</td>
         <td><small>${def.filePath.split('/').last}:${def.lineNumber}</small></td>
       </tr>

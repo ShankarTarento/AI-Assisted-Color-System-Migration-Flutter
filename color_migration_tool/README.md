@@ -1,112 +1,118 @@
-# Color Migration Tool
+# AI-Assisted Color System Migration Tool
 
-AI-assisted Flutter color system migration tool that safely migrates large Flutter applications from color constants to semantic theming.
+Automatically migrate Flutter apps from hardcoded color constants to Material 3 ThemeData with proper ColorScheme and ThemeExtensions.
 
 ## Features
 
-- 🔍 **Static Analysis** - Audit all color usage in your Flutter project
-- 🏷️ **Classification** - Automatically categorize colors (core, variant, component, legacy, unused)
-- 🗺️ **Mapping Configuration** - Explicit YAML-based color mapping (no guessing)
-- 🎨 **Theme Generation** - Generate `ThemeData` and `ThemeExtension` classes
-- 🔄 **Safe Refactoring** - AST-based code transformation with context injection
-- 🤖 **AI Assistance** - LLM-powered mapping suggestions and safety validation
-- ✅ **Zero Regressions** - Verified through golden tests and explicit mappings
-
-## Installation
-
-```bash
-# Clone the repository
-git clone <repo-url>
-cd color_migration_tool
-
-# Install dependencies
-dart pub get
-
-# Compile the executable
-dart compile exe bin/color_migrate.dart -o color_migrate
-
-# Add to PATH (optional)
-export PATH="$PATH:$(pwd)"
-```
+- 🔍 **Automatic Color Detection** - Scans your entire codebase for color definitions and usages
+- 🎨 **Smart Classification** - Categorizes colors into primary, secondary, semantic, brand, and component groups
+- 🤖 **AI-Powered Suggestions** - Optional AI assistance for optimal color mappings
+- 🛡️ **Safe Refactoring** - Automatic backups, dry-run mode, and rollback support
+- ✅ **Migration Validation** - Pre-migration readiness checks ensure smooth transitions
+- 📊 **Visual Diff Viewer** - HTML-based diff preview before applying changes
 
 ## Quick Start
 
 ```bash
-# 1. Initialize migration project
-color_migrate init --project /path/to/your/flutter/app
+# 1. Navigate to your Flutter project
+cd /path/to/your/flutter/project
 
-# 2. Run color audit
-color_migrate audit --output audit_report.json
+# 2. Run audit
+dart run /path/to/color_migration_tool/bin/color_migrate.dart audit
 
 # 3. Classify colors
-color_migrate classify --audit audit_report.json --output classification.json
+dart run /path/to/color_migration_tool/bin/color_migrate.dart classify -a audit.json -o classification.json
 
-# 4. Generate mapping template
-color_migrate map-generate --classification classification.json --output color_mapping.yaml
+# 4. Generate mapping
+dart run /path/to/color_migration_tool/bin/color_migrate.dart map-generate -c classification.json -o color_mapping.yaml
 
-# 5. (Optional) AI-assisted suggestions
-color_migrate map-suggest --audit audit_report.json --ai-provider openai
+# 5. Check readiness
+dart run /path/to/color_migration_tool/bin/color_migrate.dart check-readiness -m color_mapping.yaml
 
-# 6. Validate mapping
-color_migrate map-validate --mapping color_mapping.yaml
+# 6. Preview changes
+dart run /path/to/color_migration_tool/bin/color_migrate.dart refactor -m color_mapping.yaml --dry-run
 
-# 7. Generate theme code
-color_migrate theme-generate --mapping color_mapping.yaml --output lib/theme/
-
-# 8. Preview changes (dry-run)
-color_migrate refactor --mapping color_mapping.yaml --dry-run
-
-# 9. Apply refactoring
-color_migrate refactor --mapping color_mapping.yaml --apply
-
-# 10. Verify migration
-color_migrate verify --baseline screenshots/baseline/ --current screenshots/current/
-```
-
-## Configuration
-
-Create `.color_migrate.yaml` in your project root:
-
-```yaml
-project_root: /path/to/flutter/app
-color_class: lib/constants/app_colors.dart
-theme_output: lib/theme/
-backup_dir: .migration_backup/
-
-ai_config:
-  provider: openai
-  model: gpt-4
-  api_key_env: OPENAI_API_KEY
-
-safety:
-  require_approval: true
-  create_backup: true
-  max_files_per_batch: 50
+# 7. Apply migration
+dart run /path/to/color_migration_tool/bin/color_migrate.dart refactor -m color_mapping.yaml --apply
 ```
 
 ## Documentation
 
-- [Architecture Overview](docs/architecture.md)
-- [Mapping Configuration Reference](docs/mapping_config.md)
-- [Migration Guide](docs/migration_guide.md)
-- [API Documentation](docs/api.md)
+- **[User Guide](USER_GUIDE.md)** - Complete usage documentation
+- **[Testing Guide](../brain/*/testing_guide.md)** - How to test with example_app
+- **[Implementation Plans](../brain/*/implementation_plan.md)** - Technical details
 
-## Development
+## Commands
+
+| Command | Purpose |
+|---------|---------|
+| `audit` | Scan project for all color definitions and usages |
+| `classify` | Categorize colors by semantic role |
+| `map-generate` | Create mapping configuration from classification |
+| `map-suggest` | Get AI suggestions for color mappings (optional) |
+| `map-validate` | Validate mapping configuration |
+| `check-readiness` | Verify project is ready for migration |
+| `theme-generate` | Generate ThemeData code from mapping |
+| `refactor` | Apply code refactoring (with --dry-run or --apply) |
+| `rollback` | Restore from backup if needed |
+
+## Requirements
+
+- Dart SDK 3.0+ or Flutter 3.10+
+- A Flutter project with color constants to migrate
+
+## Installation
 
 ```bash
-# Run tests
-dart test
-
-# Run with debugging
-dart run bin/color_migrate.dart audit --project ../example_app
-
-# Format code
-dart format .
-
-# Analyze code
-dart analyze
+git clone https://github.com/YOUR_REPO/AI-Assisted-Color-System-Migration-Flutter.git
+cd AI-Assisted-Color-System-Migration-Flutter/color_migration_tool
+dart pub get
 ```
+
+## Example Output
+
+**Before Migration:**
+```dart
+class AppColors {
+  static const primaryBlue = Color(0xFF1976D2);
+  static const errorRed = Color(0xFFD32F2F);
+}
+
+// Usage
+Container(color: AppColors.primaryBlue)
+```
+
+**After Migration:**
+```dart
+// Generated theme
+final theme = ThemeData(
+  colorScheme: ColorScheme(
+    primary: Color(0xFF1976D2),
+    error: Color(0xFFD32F2F),
+  ),
+);
+
+// Updated usage
+Container(color: Theme.of(context).colorScheme.primary)
+```
+
+## Benefits
+
+✅ **Material 3 Compliance** - Modern Flutter theming  
+✅ **Dark Mode Support** - Built-in light/dark theme support  
+✅ **Type Safety** - Compile-time color checking  
+✅ **Maintainability** - Centralized theme management  
+✅ **Customization** - Easy widget-level theme overrides
 
 ## License
 
-MIT License - See LICENSE file for details
+MIT License - See [LICENSE](LICENSE) for details
+
+## Contributing
+
+Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+
+## Support
+
+- **Issues**: [GitHub Issues](https://github.com/YOUR_REPO/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/YOUR_REPO/discussions)

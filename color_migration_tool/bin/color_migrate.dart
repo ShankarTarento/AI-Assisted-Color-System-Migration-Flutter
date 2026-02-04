@@ -313,7 +313,7 @@ class MapSuggestCommand extends Command<void> {
       final analyzer = UsageAnalyzer();
       final analysis = await analyzer.analyzeProject(Directory.current.path);
       
-      print('✓ Found ${analysis.colors.length} colors\n');
+      print('✓ Found ${analysis.colorDefinitions.length} colors\n');
       
       // Get AI suggestions for top colors
       print('🧠 Generating AI suggestions for top colors...\n');
@@ -322,8 +322,9 @@ class MapSuggestCommand extends Command<void> {
       var count = 0;
       const maxSuggestions = 10; // Limit to top 10 colors
       
-      for (final colorDef in analysis.colors.take(maxSuggestions)) {
-        final usageCount = analysis.getUsageCount(colorDef.qualifiedName);
+      for (final colorDef in analysis.colorDefinitions.take(maxSuggestions)) {
+        final stats = analysis.usageStats[colorDef.qualifiedName];
+        final usageCount = stats?.usageCount ?? 0;
         print('  Analyzing: ${colorDef.name} (${colorDef.rgbHex}) - $usageCount usages');
         
         final suggestion = await aiService.suggestColorSchemeMapping(
@@ -405,10 +406,10 @@ class MapValidateCommand extends Command<void> {
           
           final aiFeedback = await aiService.validateMapping(
             mapping,
-            analysis.colors,
+            analysis.colorDefinitions,
           );
           
-          aiFeedback.print();
+          aiFeedback.printReport();
         }
       } catch (e) {
         print('\n⚠️  AI validation unavailable: $e');
@@ -604,7 +605,6 @@ class VerifyCommand extends Command<void> {
     print('✅ Verification complete!');
   }
 }
-}
 
 /// Rollback changes using a backup
 class RollbackCommand extends Command<void> {
@@ -698,7 +698,6 @@ class RollbackCommand extends Command<void> {
     }
   }
 }
-}
 
 /// Check migration readiness
 class CheckReadinessCommand extends Command<void> {
@@ -742,7 +741,7 @@ class CheckReadinessCommand extends Command<void> {
       print('Analyzing project colors...');
       final analyzer = UsageAnalyzer();
       final analysis = await analyzer.analyzeProject(Directory.current.path);
-      print('✓ Found ${analysis.colors.length} colors\n');
+      print('✓ Found ${analysis.colorDefinitions.length} colors\n');
       
       // Run validation
       final validator = PreMigrationValidator();
@@ -756,7 +755,7 @@ class CheckReadinessCommand extends Command<void> {
       result.printReport();
       
       // Exit with appropriate code
-      if (!result.isReady) {
+      if (!result.isValid) {
         exit(1);
       }
     } catch (e, stack) {
